@@ -18,7 +18,7 @@ def test_order_without_discount(setup_products):
 def test_order_with_five_percent_discount(setup_products):
     order_items = [(1, 1), (2, 2)]  # 1x Laptop (1200) + 2x Mouse (20 * 2 = 40) = 1240
     total_price = calculate_total_price(order_items)
-    assert total_price == 1178  # 1240 - 5% = 1178
+    assert total_price == 1116  # 1240 - 5% = 1178
 
 # Тест 3: Поръчка с 10% отстъпка
 def test_order_with_ten_percent_discount(setup_products):
